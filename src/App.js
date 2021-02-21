@@ -42,7 +42,7 @@ class App extends React.Component {
 
   onButtonClick = () => {
     this.setState({submitted: true});
-    fetch('http://localhost:3000/detect', {
+    fetch('https://whispering-beach-94356.herokuapp.com:3000/detect', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
